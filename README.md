@@ -57,21 +57,9 @@ Exploratory analysis was performed to understand:
 
 Visualizations were created using Matplotlib to identify important patterns in the data.
 
-### 3. Feature Engineering
 
-Additional behavioural features were created to better represent customer financial activity.
 
-Examples include:
-
-- Payment-to-balance ratio
-- Purchase-to-limit ratio
-- Payment-to-purchase ratio
-- Available credit
-- Balance-to-purchase ratio
-
-These features were designed to capture customer payment behaviour, credit utilization, and spending patterns.
-
-### 4. Machine Learning
+### 3. Machine Learning
 
 The project treats churn prediction as a binary classification problem.
 
