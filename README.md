@@ -84,6 +84,29 @@ The final model achieved a ROC-AUC score of approximately **0.86**, indicating s
 Feature importance and statistical analysis were used to investigate which customer characteristics contributed most to the model's predictions.
 
 This helps move beyond simply predicting churn and provides insight into **why customers may be classified as high-risk**.
+Feature importance was examined to understand which variables contributed most strongly to the model's predictions.
+
+The most influential features were:
+
+| Feature | Importance |
+|---|---:|
+| `risk_score` | 0.755 |
+| `balance` | 0.096 |
+| `monthly_ir` | 0.062 |
+| `tenure_ye` | 0.029 |
+| `customer_segment_Mass` | 0.017 |
+
+The model placed the greatest importance on `risk_score`, which accounted for approximately **75.5% of the model's total feature importance**. `balance`, `monthly_ir`, and `tenure_ye` were the next most influential variables.
+
+These results provide insight into which behavioural and financial variables the model relied on most heavily when making predictions.
+
+Feature importance is used for **model interpretation rather than causal inference**; a high feature importance indicates that a variable was useful to the model but does not imply that the variable directly causes the predicted outcome.
+
+### Key Observation
+
+The strong contribution of `risk_score` suggests that the model's predictions are heavily driven by the underlying behavioural information captured by this variable. Further analysis using SHAP can be used to investigate how individual features influence predictions and whether higher or lower feature values push predictions toward different outcomes.
+
+
 
 ## Technologies Used
 
